@@ -1,5 +1,5 @@
 apiVersion: networking.k8s.io/v1
-kind: NodePort
+kind: Ingress
 metadata:
   name: fortune-cookie-ingress
   namespace: default
@@ -7,7 +7,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: app.acconsultoriase.com.br
+  - host: fortune.local
     http:
       paths:
       - path: /
