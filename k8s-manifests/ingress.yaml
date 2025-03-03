@@ -7,7 +7,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: fortune.local
+  - host: app.acconsultoriase.com.br
     http:
       paths:
       - path: /
