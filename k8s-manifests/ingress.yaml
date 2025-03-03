@@ -1,5 +1,5 @@
 apiVersion: networking.k8s.io/v1
-kind: LoadBalancer 
+kind: NodePort
 metadata:
   name: fortune-cookie-ingress
   namespace: default
